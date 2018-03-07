@@ -178,7 +178,6 @@ def bot(op):
                             md += ".yid\n"
                             md += ".me\n"
                             md += ".spbot\n"
-                            md += ".tagall\n"
                             md += ".pengaturan\n"
                             md += ".restart\n"
                             md += ".removechat\n"
@@ -280,20 +279,6 @@ def bot(op):
                             ks.sendText("u3b07c57b6239e5216aa4c7a02687c86d", '.')
                             elapsed_time = time.time() - start5
                             ks.sendText(msg.to, "%s" % (elapsed_time))
-                            
-                        elif text.lower() == ".tagall":
-                            group = cl.getGroup(msg.to)
-                            nama = [contact.mid for contact in group.members]
-                            k = len(nama)//100
-                            for a in range(k+1):
-                                txt = u''
-                                s=0
-                                b=[]
-                                for i in group.members[a*100 : (a+1)*100]:
-                                    b.append({"S":str(s), "E" :str(s+6), "M":i.mid})
-                                    s += 7
-                                    txt += u'@Sange \n'
-                                cl.sendMessage(to, text=txt, contentMetadata={u'MENTION': json.dumps({'MENTIONEES':b})}, contentType=0)
                                 
                         elif text.lower() == ".restart":
                             if msg._from in RASuper:
