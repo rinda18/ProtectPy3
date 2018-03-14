@@ -53,8 +53,6 @@ def bot(op):
     try:
         if op.type == 5:
             if Setmain["RAautoadd"] == True:
-                ra = cl.getContact(op.param1)
-                cl.findAndAddContactsByMid(ra.mid)
                 cl.sendMessageWithMention(op.param1, op.param1,"Hai","\nsudah ku addback ya\n\n{}".format(str(Setmain["RAmessage"])))
                 
         if op.type == 22:
@@ -65,17 +63,13 @@ def bot(op):
         if op.type == 13:
             if mid in op.param3:
                 if Setmain["RAautojoin"] == True:
-                    if Setmain["RAbatas"]["on"] == True:
-                        G = cl.getGroup(op.param1)
-                        if len(G.members) > Setmain["RAbatas"]["members"]:
-                            cl.acceptGroupInvitation(op.param1)
-                            ra = cl.getGroup(op.param1)
-                            cl.sendText(op.param1,"Maaf jumlah member\n " + str(ra.name) + " lebih dari " + str(Setmain["RAbatas"]["members"]))
-                            cl.leaveGroup(op.param1)
-                        else:
-                            cl.acceptGroupInvitation(op.param1)
-                            ra = cl.getGroup(op.param1)
-                            cl.sendMessageWithMention(op.param1, ra.creator.mid,"hallo","\nsalken group creator...")
+                    if op.param2 not in RAFamily:
+                        cl.acceptGroupInvitation(op.param1)
+                        cl.leaveGroup(op.param1)
+                    else:
+                        cl.acceptGroupInvitation(op.param1)
+                        ra = cl.getGroup(op.param1)
+                        cl.sendMessageWithMention(op.param1, ra.creator.mid,"hallo","\nsalken group creator...")
                             
             if Amid in op.param3:
                 if Setmain["RAautojoin"] == True:
