@@ -58,18 +58,24 @@ def bot(op):
         if op.type == 22:
             if mid in op.param3:
                 if Setmain["RAautojoin"] == True:
-                    cl.leaveRoom(op.param1)        
-                
+                    cl.leaveRoom(op.param1) 
+                    
+        # Jika tidak bisa autojoin, silahkan cek letter sealing akun bot di setting -> privasi
+        # udah dites pakai akun bot yg sudah berteman & letter sealing dinonaktifkan
         if op.type == 13:
             if mid in op.param3:
                 if Setmain["RAautojoin"] == True:
-                    if op.param2 not in RAFamily:
-                        cl.acceptGroupInvitation(op.param1)
-                        cl.leaveGroup(op.param1)
-                    else:
-                        cl.acceptGroupInvitation(op.param1)
-                        ra = cl.getGroup(op.param1)
-                        cl.sendMessageWithMention(op.param1, ra.creator.mid,"hallo","\nsalken group creator...")
+                    if Setmain["RAbatas"]["on"] == True:
+                        G = cl.getGroup(op.param1)
+                        if len(G.members) > Setmain["RAbatas"]["members"]:
+                            cl.acceptGroupInvitation(op.param1)
+                            ra = cl.getGroup(op.param1)
+                            cl.sendText(op.param1,"Maaf jumlah member\n " + str(ra.name) + " lebih dari " + str(Setmain["RAbatas"]["members"]))
+                            cl.leaveGroup(op.param1)
+                        else:
+                            cl.acceptGroupInvitation(op.param1)
+                            ra = cl.getGroup(op.param1)
+                            cl.sendMessageWithMention(op.param1, ra.creator.mid,"hallo","\nsalken group creator...")
                             
             if Amid in op.param3:
                 if Setmain["RAautojoin"] == True:
