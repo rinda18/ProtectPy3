@@ -185,6 +185,7 @@ def bot(op):
                             md += ".autoread 「on/off」\n"
                             md += ".join\n"
                             md += ".bye\n"
+                            md += ".listbl\n"
                             md += ".kick「@」\n"
                             cl.sendText(msg.to, md)
                             
@@ -326,6 +327,19 @@ def bot(op):
                                 kc.leaveGroup(msg.to)
                                 ks.leaveGroup(msg.to)
                                 
+                        elif text.lower() == ".listbl":
+                            if msg._from in RASuper:
+                                if Setmain["RAblacklist"] == {}:
+                                    cl.sendMessageWithMention(msg.to, msg._from,"Maaf","\nblacklist kosong")
+                                else:
+                                    no = 0
+                                    hasil = "User\n"
+                                    for a in cl.getContacts(Setmain["RAblacklist"]):
+                                        no += 1
+                                        hasil += "\n" + str(no) + ". " + str(a.displayName)
+                                    hasil += "\n\nTotal {} blacklist".format(str(len(cl.getContacts(Setmain["RAblacklist"]))))
+                                    cl.sendText(msg.to,hasil)
+                                    
                         elif ".kick" in text.lower():
                             if msg._from in RASuper:
                                 key = eval(msg.contentMetadata["MENTION"])
