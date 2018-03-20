@@ -53,12 +53,16 @@ def bot(op):
     try:
         if op.type == 5:
             if Setmain["RAautoadd"] == True:
-                cl.sendMessageWithMention(op.param1, op.param1,"Hai","\nsudah ku addback ya\n\n{}".format(str(Setmain["RAmessage"])))
+                cl.sendMessageWithMention(op.param1, op.param1,"Hai","\nsalam kenal ya\n\n{}".format(str(Setmain["RAmessage"])))
                 
         if op.type == 22:
             if mid in op.param3:
                 if Setmain["RAautojoin"] == True:
-                    cl.leaveRoom(op.param1) 
+                    cl.leaveRoom(op.param1)
+                    ki.leaveRoom(op.param1)
+                    kk.leaveRoom(op.param1) 
+                    kc.leaveRoom(op.param1) 
+                    ks.leaveRoom(op.param1) 
                     
         # Jika tidak bisa autojoin, silahkan cek letter sealing akun bot di setting -> privasi
         # udah dites pakai akun bot yg sudah berteman & letter sealing dinonaktifkan
