@@ -9,6 +9,11 @@ from multiprocessing import Pool, Process
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re,os,subprocess
 
+#kalau mau ambil qr
+#cl = LINE()
+#cl.log("Auth Token : " + str(cl.authToken))
+#cl.log("Timeline Token : " + str(cl.tl.channelAccessToken))
+
 cl = LINE("Eq22zMaNi2rh9n8eDOC9.BdpRgRzqzb2lLIU1ldEPUq.4GKSthHBBiIw56jP15o4zltsB6ny6MXAEenDp0tUjOs=")
 cl.log("Auth Token : " + str(cl.authToken))
 cl.log("Timeline Token : " + str(cl.tl.channelAccessToken))
