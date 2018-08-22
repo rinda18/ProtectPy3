@@ -14,28 +14,27 @@ import time,random,sys,json,codecs,threading,glob,re,os,subprocess
 #cl.log("Auth Token : " + str(cl.authToken))
 #cl.log("Timeline Token : " + str(cl.tl.channelAccessToken))
 
-cl = LINE("Eq22zMaNi2rh9n8eDOC9.BdpRgRzqzb2lLIU1ldEPUq.4GKSthHBBiIw56jP15o4zltsB6ny6MXAEenDp0tUjOs=")
+cl = LINE("EwMOswNrySknlz9DLjP3.zp81iCnJRS6DWRFwE7rbCW.pjYodEkBT4a54+NUparCYdfQvGrY0Pgi/9JYhFwtU4E=")
 cl.log("Auth Token : " + str(cl.authToken))
 cl.log("Timeline Token : " + str(cl.tl.channelAccessToken))
 
-ki = LINE("Eqd2Wio0UL8tijmOfDj7.rRVuSfddWcLmlbNLK5LsDW.gAmGXUrysF13yhZ4oYdfpQDJaiCVLEOYfz2kU/yhegA=")
+ki = LINE("EwQwiT6DfOxNgVq4N5k4.6H/R+wrQy2yUyPPXaxh/na.6NRoxk5l1rhrVXJm/ELejdhCF8SP5CChXEVa60xwpic=")
 ki.log("Auth Token : " + str(ki.authToken))
 ki.log("Timeline Token : " + str(ki.tl.channelAccessToken))
 
-kk = LINE("EqmOGzzYH3SNmOSTtl6c.P7v+ofsgXxAqBC317p2yVa.e3NctlOeDmbCS9u5960LMRKAD11PELnntlTq/FowalM=")
+kk = LINE("Ew30YvWx8HLYgoafox1f.+llTyZYKm78j6la5VJ62dW.ni81UyZYBJHk7n3rFiy26jGrjPdf0drBE8oN1ywKM3k=")
 kk.log("Auth Token : " + str(kk.authToken))
 kk.log("Timeline Token : " + str(kk.tl.channelAccessToken))
 
-kc = LINE("EqDj4CO3Lz8ENiFwWTt0.xpPFjVkUKyP4ClK5B/BtGa.Ng+hfJaFP0780fzhnlnGsiDFc2wR6ZDbMzSEL2ZGQbc=")
+kc = LINE("EwbQ1uHV1VscXP22l6g3.OUlRzsF0pgECqaJ28bzZyW.DEpPFwOb8b8YwbBKjjdzcwop1K6H1uR5iCf+pOqgTdw=")
 kc.log("Auth Token : " + str(kc.authToken))
 kc.log("Timeline Token : " + str(kc.tl.channelAccessToken))
 
-ks = LINE("Eqqin1hOvLHH27sMUgcc.bQuUXKLd73gunJ2vKaYXpa.tnR4UVbXTCjqgbZ/vKI/HqW9yb/A3rYpQj7D3BEnNTk=")
+ks = LINE("EwJkBZO4yMIWg0LLIpn4.isZS+Kbg898rFh+kmWKb1a.xpUABCfeHYY/6URqJnByQ+V3y42Sm8lj5deKtQKU9M8=")
 ks.log("Auth Token : " + str(ks.authToken))
 ks.log("Timeline Token : " + str(ks.tl.channelAccessToken))
 
 helpMessage ="""╔═══════════════╗
-         ✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰
 ╚═══════════════╝
 ═════════════════
  ◄]·♦·Menu For Public·♦·[►
@@ -62,7 +61,6 @@ helpMessage ="""╔═══════════════╗
 ╠ Banlist
 ╚════════════════
 ╔═══════════════╗
-         ✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰
 ╚═══════════════╝"""
 
 oepoll = OEPoll(cl)
@@ -74,8 +72,8 @@ Cmid = kc.getProfile().mid
 Dmid = ks.getProfile().mid
 
 Bots=[mid,Amid,Bmid,Cmid,Dmid]
-admin=["ub41f826c5d81c8ead447ee84c43857b1"] 
-owner=["ub41f826c5d81c8ead447ee84c43857b1"]
+admin=["uac8e3eaf1eb2a55770bf10c3b2357c33"] 
+owner=["uac8e3eaf1eb2a55770bf10c3b2357c33"]
 whitelist=[""]
 wait = {
     'contact':False,
@@ -84,36 +82,25 @@ wait = {
     'leaveRoom':True,
     'timeline':True,
     'autoAdd':True,
-    'message':"""╔════════════╗
-     ✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰
-╚════════════╝
-══════════════
- ◄]·♦·Open Sewa·♦·[►
-╔═════════════
-╠ VPS
-╠ SelfBot
-╠ Bot Protect
-╚═════════════
-Minat?
-http://line.me/ti/p/~iiipuuul""",
+    'message':"""Puy!""",
     "lang":"JP",
-    "comment":"Thanks for add me",
+    "comment":"Thx for Add",
     "commentOn":False,
     "commentBlack":{},
     "wblack":False,
     "dblack":False,
     "clock":False,
-    "cName":"✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰",
-    "cName2":"✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰ ",
-    "cName3":"✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰ ",
-    "cName4":"✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰ ",
-    "cName5":"✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰ ",
+    "cName":"̡̢̛͞é̡rr҉́ơ̶̴̸r҉̵̵̡̡}̢̛̀ボットガードグループ",
+    "cName2":"̡̢̛͞é̡rr҉́ơ̶̴̸r҉̵̵̡̡}̢̛̀ボットガードグループ",
+    "cName3":"̡̢̛͞é̡rr҉́ơ̶̴̸r҉̵̵̡̡}̢̛̀ボットガードグループ",
+    "cName4":"̡̢̛͞é̡rr҉́ơ̶̴̸r҉̵̵̡̡}̢̛̀ボットガードグループ",
+    "cName5":"̡̢̛͞é̡rr҉́ơ̶̴̸r҉̵̵̡̡}̢̛̀ボットガードグループ",
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
-    "Protectgr":True,
-    "Protectcancl":True,
-    "protectionOn":True,
+    "Protectgr":False,
+    "Protectcancl":False,
+    "protectionOn":False,
     "atjointicket":True
     }
 
@@ -162,13 +149,13 @@ def bot(op):
                 pass
               else:
                 try:
-                  cl.sendText(op.param1,cl.getContact(op.param2).displayName + "Jangan Buka Kode QR Njiiir")
+                  cl.sendText(op.param1,cl.getContact(op.param2).displayName + "Qr Update Secure status : On")
                   cl.kickoutFromGroup(op.param1,[op.param2])
                   X = cl.getGroup(op.param1)
                   X.preventedJoinByTicket = True
                   cl.updateGroup(X)
                 except:
-                  random.choice(KAC).sendText(op.param1,random.choice(KAC).getContact(op.param2).displayName + "Jangan Buka Kode QR Njiiir")
+                  random.choice(KAC).sendText(op.param1,random.choice(KAC).getContact(op.param2).displayName + "Qr Update Secure status : On")
                   random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
                   Z = random.choice(KAC).getGroup(op.param1)
                   Z.preventedJoinByTicket = True
@@ -188,7 +175,7 @@ def bot(op):
               pass
             else:
               random.choice(KAC).cancelGroupInvitation(op.param1, gMembMids)
-              random.choice(KAC).sendText(op.param1, "Mau Ngundang Siapa Ka?\nKk Bukan Admin\nJadi Aku Cancel😛")
+              random.choice(KAC).sendText(op.param1, "Hah?")
 
 #======================================================================================================#
 #======================================================================================================#
@@ -1732,11 +1719,10 @@ def bot(op):
 
             elif msg.text in ["Creator"]:
               msg.contentType = 13
-              msg.contentMetadata = {'mid': 'ued156c86ffa56024c0acba16f7889e6d'}
-              cl.sendText(msg.to,"======================")
+              msg.contentMetadata = {'mid': 'uac8e3eaf1eb2a55770bf10c3b2357c33'}
               cl.sendMessage(msg)
-              cl.sendText(msg.to,"======================")
-              cl.sendText(msg.to,"Itu Creator Kami Yang Pea 😜")
+              cl.sendText(msg.to,"Hee")
+              #cl.sendText(msg.to,"Itu Creator Kami Yang Pea 😜")
 
 #======================================================================================================#
 #======================================================================================================#
@@ -1898,16 +1884,16 @@ def autolike():
       if hasil['result']['posts'][zx]['postInfo']['liked'] == False:
         try:
           cl.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1001)
-          cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"╔════════════╗\n     ✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰\n╚════════════╝\n══════════════\n ◄]·♦·Open Sewa·♦·[►\n╔═════════════\n╠ VPS\n╠ SelfBot\n╠ Bot Protect\n╚═════════════\nMinat?\nhttp://line.me/ti/p/~iiipuuul")
+          cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"hei")
           ki.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1001)
-          ki.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"╔════════════╗\n     ✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰\n╚════════════╝\n══════════════\n ◄]·♦·Open Sewa·♦·[►\n╔═════════════\n╠ VPS\n╠ SelfBot\n╠ Bot Protect\n╚═════════════\nMinat?\nhttp://line.me/ti/p/~iiipuuul")
+          ki.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"hei")
           kk.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1001)
-          kk.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"╔════════════╗\n     ✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰\n╚════════════╝\n══════════════\n ◄]·♦·Open Sewa·♦·[►\n╔═════════════\n╠ VPS\n╠ SelfBot\n╠ Bot Protect\n╚═════════════\nMinat?\nhttp://line.me/ti/p/~iiipuuul")
+          kk.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"hei")
           kc.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1001)
-          kc.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"╔════════════╗\n     ✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰\n╚════════════╝\n══════════════\n ◄]·♦·Open Sewa·♦·[►\n╔═════════════\n╠ VPS\n╠ SelfBot\n╠ Bot Protect\n╚═════════════\nMinat?\nhttp://line.me/ti/p/~iiipuuul")
+          kc.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"hei")
           ks.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1001)
-          ks.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"╔════════════╗\n     ✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰\n╚════════════╝\n══════════════\n ◄]·♦·Open Sewa·♦·[►\n╔═════════════\n╠ VPS\n╠ SelfBot\n╠ Bot Protect\n╚═════════════\nMinat?\nhttp://line.me/ti/p/~iiipuuul")
-          cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"╔════════════╗\n     ✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰\n╚════════════╝\n══════════════\n ◄]·♦·Open Sewa·♦·[►\n╔═════════════\n╠ VPS\n╠ SelfBot\n╠ Bot Protect\n╚═════════════\nMinat?\nhttp://line.me/ti/p/~iiipuuul")
+          ks.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"hei")
+          cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"hei")
           print ("Like")
         except:
           pass
@@ -1929,8 +1915,8 @@ def likePost():
                     kk.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
                     kc.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
                     ks.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-                    cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like")
-                    cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto Like")
+                    cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Liked")
+                    cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Liked")
                     print ("Like")
                 except:
                     pass
