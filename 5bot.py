@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Support Ghost Team & One Piece Team
 
-uanyelkevinrk@work4uber.us
+#uanyelkevinrk@work4uber.us
 
 from LINEPY import *
 from akad.ttypes import *
